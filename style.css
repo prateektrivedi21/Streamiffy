@@ -328,6 +328,9 @@ button a:hover {
   .logo{
     font-size: medium;
   }
+  .footer {
+    font-size: small;
+  }
 }
 
 .video-popup-overlay {
@@ -360,7 +363,7 @@ button a:hover {
 
 .footer {
   text-align: center;
-  font-size: small;
+  font-size: medium;
   padding: 10px;
   cursor: pointer;
   background-color: var(--bg-color);
