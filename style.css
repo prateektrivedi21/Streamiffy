@@ -74,7 +74,6 @@ button a:hover {
 }
 
 .slider {
-  /* margin-top: 40px; */
   width: 80vw;
   display: flex;
   align-items: center;
@@ -321,10 +320,15 @@ button a:hover {
 }
 
 @media (max-width: 400px) { 
-  button, .logo {
+  button{
     display: none;
   }
-  .header h1{
+  .logo{
+    font-size: small;
+  }
+  header h1{
+    display: block;
+    margin: 0 auto 0 20%;
     text-align: center;
   }
 }
@@ -355,4 +359,20 @@ button a:hover {
 .video-popup video {
   width: 100%;
   border-radius: 10px;
+}
+
+.footer {
+  text-align: center;
+  font-size: small;
+  padding: 10px;
+  cursor: pointer;
+  background-color: var(--bg-color);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-decoration: none;
+}
+.footer p a i{
+  color: white;
+  text-decoration: none;
 }
