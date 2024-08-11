@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link type="image/png" sizes="32x32" rel="icon" href="videos/icons8.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="app.js" defer type="module"></script>
+    <title>Streamify</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Prateek</a>
+      <h1>Streamify</h1>
+      <button><a href="https://github.com/prateektrivedi21">Get More Updates</a></button>
+    </header>
+    <div class="container">
+      <div class="slider-wrapper">
+        <div class="slider"></div>
+        <div class="controls">
+          <a href="#" class="left-control">
+            <i class="bx bx-left-arrow-alt"></i>
+          </a>
+          <div class="progress">
+            <span>3</span> <span>- 10</span>
+            <div></div>
+          </div>
+          <a href="#" class="right-control">
+            <i class="bx bx-right-arrow-alt"></i>
+          </a>
+        </div>
+      </div>
+      <div class="video-popup-overlay" id="videoPopupOverlay"></div>
+      <div class="video-popup" id="videoPopup">
+        <video controls autoplay id="popupVideo"></video>
+      </div>
+    </div>
+  </body>
+</html>
