@@ -321,15 +321,12 @@ button a:hover {
 
 @media (max-width: 400px) { 
   button{
-    display: none;
+    font-size: small;
+    display: block;
+    padding:5px;
   }
   .logo{
-    font-size: small;
-  }
-  header h1{
-    display: block;
-    margin: 0 auto 0 20%;
-    text-align: center;
+    font-size: medium;
   }
 }
 
