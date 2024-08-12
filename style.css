@@ -9,6 +9,7 @@
   --main-color: #112e42;
   --bg-color: #081b29;
   --text-color: #ededed;
+  --bd-color: #FFB22C;
 }
 
 body {
@@ -25,7 +26,7 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 10%;
+  padding: 15px 10%;
   background: var(--bg-color);
   display: flex;
   justify-content: space-between;
@@ -34,11 +35,33 @@ html {
   transition: 0.3s;
 }
 
-.logo {
+.logo a{
   font-size: 25px;
   color: var(--text-color);
+  position: relative;
   text-decoration: none;
   font-weight: 600;
+  padding: 5px 10px;
+}
+.logo a::before {
+  border-top: 3px solid var(--bd-color);
+  border-left: 3px solid var(--bd-color);
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.logo a::after {
+  border-bottom: 3px solid var(--bd-color);
+  border-right: 3px solid var(--bd-color);
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .header h1 {
@@ -46,17 +69,19 @@ html {
   color: #FFB22C;
   font-size: 30px;
   font-weight: 600;
+  position: relative;
 }
 
 button {
   font-size: large;
   border-radius: 2rem;
-  padding: 8px;
+  padding: 6px;
   background-color: goldenrod;
   font-weight: 500;
   transition: 0.3s;
   cursor: pointer;
 }
+
 button a{
   color: var(--text-color);
   text-decoration: none;
@@ -281,8 +306,8 @@ button a:hover {
 }
 
 @media (max-width: 650px) {
-  .header h1 {
-    font-size: 25px;
+  .logo a{
+    font-size: 20px;
   }
   button {
     font-size: small;
@@ -305,11 +330,19 @@ button a:hover {
 }
 
 @media (max-width: 550px) {
-  .logo {
+  .logo a{
     font-size: 20px;
   }
+  .logo a::before{
+    width: 13px;
+    height: 13px;
+  }
+  .logo a::after{
+    width: 13px;
+    height: 13px;
+  }
   .header h1 {
-    font-size: 20px;
+    font-size: 25px;
   }
   button {
     font-size: small;
@@ -319,17 +352,16 @@ button a:hover {
   }
 }
 
-@media (max-width: 400px) { 
+@media (max-width: 450px) { 
   button{
     font-size: small;
     display: block;
-    padding:6px;
   }
-  .logo{
+  .logo a{
     font-size: medium;
   }
-  .footer {
-    font-size: small;
+  .header h1 {
+    font-size: 20px;
   }
 }
 
@@ -363,7 +395,7 @@ button a:hover {
 
 .footer {
   text-align: center;
-  font-size: medium;
+  font-size: small;
   padding: 10px;
   cursor: pointer;
   background-color: var(--bg-color);
